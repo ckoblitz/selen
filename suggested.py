@@ -23,8 +23,7 @@ def login():
 	lclick = driver.find_element_by_id('u_0_b')
 	lclick.click()
 
-
-addr="https://www.facebook.com/anaclara.silvadamotta.5?eid=ARCnTWu_ZQRCw3O7ADPLsFuGuJZWWptUY331URGOcbARRStEdmBT2_YaaJdcESKNVjWzBkJG2gLc9mb7&timeline_context_item_type=intro_card_relationship&timeline_context_item_source=100004245309827"
+driver.get("https://www.facebook.com/anaclara.silvadamotta.5?eid=ARCnTWu_ZQRCw3O7ADPLsFuGuJZWWptUY331URGOcbARRStEdmBT2_YaaJdcESKNVjWzBkJG2gLc9mb7&timeline_context_item_type=intro_card_relationship&timeline_context_item_source=100004245309827")
 
 def tere(addr):
 	driver.get(addr)
