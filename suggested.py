@@ -75,4 +75,13 @@ def getname(addr):
 		nb2 = nb1.split('>')[1]
 		print(nb2)
 
-
+def amigoremove():
+	driver.get("https://www.facebook.com/?sk=ff")
+	lo4 =driver.page_source
+	soup5 =BeautifulSoup(lo4, 'html.parser')
+	for nm in soup5.findAll("a", { "class" : "_42ft _4jy0 _3-99 removeButton _4jy3 _517h _51sy" }):	
+		a1 = nm.get('aria-label')
+		a2 = nm.get('id')
+		if (nb2) in a1:
+			rem = find_element_by_id(a2)
+			rem.click()
